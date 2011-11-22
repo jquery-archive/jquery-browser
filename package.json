@@ -1,0 +1,27 @@
+{
+  "name": "jquery-browser",
+  "id": "jquery-browser",
+	"version": "0.0.0",
+  "description": "jQuery.browser compatibility plugin",
+  "homepage": "https://github.com/jquery/jquery-browser",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jquery/jquery-browser.git",
+    "web": "https://github.com/jquery/jquery-browser"
+  },
+  "bugs": {
+    "url": "http://bugs.jquery.com"
+  },
+  "devDependencies": {
+    "test": ">=0.2.1"
+  },
+  "engines": {
+    "node": ">=0.4.8"
+  },
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "licenses": [{
+    "type" : "MIT"
+  }]
+}
