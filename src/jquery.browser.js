@@ -8,10 +8,11 @@
 	var userAgent = navigator.userAgent || "",
 
 		// For matching the engine and version of the browser
-		browserMatch;
+		matched;
 
 	// Use of jQuery.browser is frowned upon.
 	// More details: http://api.jquery.com/jQuery.browser
+	// jQuery.uaMatch maintained for back-compat
 	jQuery.uaMatch = function( ua ) {
 		ua = ua.toLowerCase();
 
@@ -28,16 +29,17 @@
 		};
 	};
 
-	browserMatch = jQuery.uaMatch( userAgent );
+	matched = jQuery.uaMatch( userAgent );
 
 	jQuery.browser = {};
 
-	if ( browserMatch.browser ) {
-		jQuery.browser[ browserMatch.browser ] = true;
-		jQuery.browser.version = browserMatch.version;
+	if ( matched.browser ) {
+		jQuery.browser[ matched.browser ] = true;
+		jQuery.browser.version = matched.version;
 	}
 
 	// Deprecated, use jQuery.browser.webkit instead
+	// Maintained for back-compat only
 	if ( jQuery.browser.webkit ) {
 		jQuery.browser.safari = true;
 	}

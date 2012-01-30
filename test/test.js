@@ -7,6 +7,16 @@ require("../src/jquery.browser.js");
 var fs = require("fs");
 
 exports["jQuery.browser"] = function(test) {
+	test.expect(2);
+
+	test.ok( jQuery.browser, "jQuery.browser exists" );
+	test.ok( jQuery.uaMatch, "jQuery.uaMatch exists" );
+
+	test.done();
+};
+
+exports["jQuery.uaMatch()"] = function(test) {
+
 	test.expect(544);
 
 	// Load file containing all ua strings to test
