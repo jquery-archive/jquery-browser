@@ -21,8 +21,8 @@
 			[];
 
 		return {
-			browser: match[1] || "",
-			version: match[2] || "0"
+			browser: match[ 1 ] || "",
+			version: match[ 2 ] || "0"
 		};
 	};
 
