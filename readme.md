@@ -27,4 +27,9 @@ grunt
 ```
 
 
+Contributing
+====================================================
+
+Changes should be made to `src/jquery.browser.js`, not to the files in `dist/`
+
 
