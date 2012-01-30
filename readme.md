@@ -14,7 +14,7 @@ cd jquery-browser
 npm install -g grunt
 ```
 
-Run `grunt` to lint, test and build release.
+Run `grunt` to `lint`, `test` and `min` release.
 
 ```sh
 grunt
