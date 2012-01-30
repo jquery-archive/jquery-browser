@@ -1,8 +1,7 @@
-/*
- * jQuery.browser Compatibility Plugin for jQuery 1.8
- * By John Resig, Extracted to plugin by Rick Waldron
- * Dual licensed under MIT and GPL.
- */
+/*! jQuery Browser - v0.1.0 - 1/30/2012
+* https://github.com/jquery/jquery-browser
+* Copyright (c) 2012 John Resig; Licensed MIT */
+
 (function( jQuery ) {
 	var matched,
 		userAgent = navigator.userAgent || "";
