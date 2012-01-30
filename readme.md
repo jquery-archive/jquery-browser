@@ -8,8 +8,8 @@ As of jQuery 1.8, we are introducing the `jQuery.browser` backwards compatibilit
 ## Getting Started
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/jquery/jquery.browser/master/dist/jquery.browser.min.js
-[max]: https://raw.github.com/jquery/jquery.browser/master/dist/jquery.browser.js
+[min]: https://raw.github.com/jquery/jquery-browser/master/dist/jquery.browser.min.js
+[max]: https://raw.github.com/jquery/jquery-browser/master/dist/jquery.browser.js
 
 In the browser:
 
