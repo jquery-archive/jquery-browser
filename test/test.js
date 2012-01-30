@@ -1,26 +1,27 @@
+/*global require:true */
 var fs = require("fs"),
-	test = require("test"),
 	jQuery = require("../jquery.browser.js").jQuery;
-	tests = {};
 
-// Load file containing all ua strings to test
-fs.readFile("test/ua.txt", function( err, data ) {
+exports["jQuery.browser"] = function(test) {
+	test.expect(544);
 
-	var uas = data.toString().split("\n");
+	// Load file containing all ua strings to test
+	fs.readFile("test/ua.txt", function( err, data ) {
 
-	uas.forEach(function( agent, i  ) {
-		var parts = agent.split("\t"),
-			ua;
+		var uas = data.toString().split("\n");
 
-		if ( parts[2] ) {
-			ua = jQuery.uaMatch( parts[2] );
+		uas.forEach(function( agent, i	) {
+			var parts = agent.split("\t"),
+				ua;
 
-			tests[ "test " + i ] = function( assert ) {
-				assert.equal( ua.browser, parts[0], "Found: '" + ua.browser + "' in " + parts[2] );
-				assert.equal( ua.version, parts[1], "Found: '" + ua.version + "' in " + parts[2] );
-			};
-		}
+			if ( parts[2] ) {
+				ua = jQuery.uaMatch( parts[2] );
+
+				test.equal( ua.browser, parts[0], "Found: '" + ua.browser + "' in " + parts[2] );
+				test.equal( ua.version, parts[1], "Found: '" + ua.version + "' in " + parts[2] );
+			}
+		});
+
+		test.done();
 	});
-
-	test.run( tests );
-});
+};
