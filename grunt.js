@@ -8,10 +8,10 @@ config.init({
             ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
   },
   concat: {
-    'dist/jquery-browser.js': ['<banner>', '<file_strip_banner:src/jquery-browser.js>']
+    'dist/jquery.browser.js': ['<banner>', '<file_strip_banner:src/jquery.browser.js>']
   },
   min: {
-    'dist/jquery-browser.min.js': ['<banner>', 'dist/jquery-browser.js']
+    'dist/jquery.browser.min.js': ['<banner>', 'dist/jquery.browser.js']
   },
   test: {
     files: ['test/*.js']
