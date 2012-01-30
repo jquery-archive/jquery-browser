@@ -19,7 +19,7 @@
     "node": ">=0.4.8"
   },
   "scripts": {
-    "test": "node tests/test.js"
+    "test": "node test/test.js"
   },
   "licenses": [{
     "type" : "MIT"
