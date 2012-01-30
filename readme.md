@@ -33,3 +33,4 @@ Contributing
 Changes should be made to `src/jquery.browser.js`, not to the files in `dist/`
 
 
+All code should conform to the [jQuery Core Style Guide](http://docs.jquery.com/JQuery_Core_Style_Guidelines)
