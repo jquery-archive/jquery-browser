@@ -6,18 +6,18 @@ Backwards compatibility plugin for `jQuery.browser`.
 
 How to run the tests:
 ====================================================
-Clone this repo, install dependencies and run the test suite, you'll need Node and NPM installed:
+Clone this repo, install `grunt`:
 
 ```sh
 git clone git://github.com/jquery/jquery-browser.git
 cd jquery-browser
-npm install
+npm install -g grunt
 ```
 
-Then...
+Run `grunt` to lint, test and build release.
 
 ```sh
-npm test
+grunt
 ```
 
 
