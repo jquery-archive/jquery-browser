@@ -1,6 +1,6 @@
 /*global require:true */
 var fs = require("fs"),
-	jQuery = require("../jquery.browser.js").jQuery;
+	jQuery = require("../src/jquery.browser.js").jQuery;
 
 exports["jQuery.browser"] = function(test) {
 	test.expect(544);
