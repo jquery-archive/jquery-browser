@@ -21,7 +21,7 @@ config.init({
   },
   watch: {
     files: '<config:lint.files>',
-    tasks: 'lint qunit'
+    tasks: 'lint test'
   },
   jshint: {
     options: {
@@ -36,11 +36,12 @@ config.init({
       eqnull: true
     },
     globals: {
-      jQuery: true
+      jQuery: true,
+      global: true
     }
   },
   uglify: {}
 });
 
 // Default task.
-task.registerTask('default', 'lint concat min');
+task.registerTask('default', 'lint test concat min');

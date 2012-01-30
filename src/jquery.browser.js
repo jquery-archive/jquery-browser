@@ -4,7 +4,6 @@
  * Dual licensed under MIT and GPL.
  */
 (function( window, navigator, jQuery ) {
-
 	// Keep a UserAgent string for use with jQuery.browser
 	var userAgent = navigator.userAgent || "",
 
@@ -43,8 +42,4 @@
 		jQuery.browser.safari = true;
 	}
 
-	if ( typeof exports !== "undefined" ) {
-		exports.jQuery = jQuery
-	}
-
-})( this, this.navigator || {}, this.jQuery || (this.jQuery = {}) );
+}( this, this.navigator || {}, jQuery ));
