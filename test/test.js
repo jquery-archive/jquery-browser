@@ -1,5 +1,6 @@
 /*global require:true, exports:true */
 global.jQuery = {};
+global.navigator = {};
 
 require("../src/jquery.browser.js");
 

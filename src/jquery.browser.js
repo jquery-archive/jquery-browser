@@ -42,4 +42,4 @@
 		jQuery.browser.safari = true;
 	}
 
-}( this, this.navigator || {}, jQuery ));
+}( this, navigator, jQuery ));
