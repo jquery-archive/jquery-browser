@@ -1,4 +1,4 @@
-/*! jQuery Browser - v0.1.0 - 1/30/2012
+/*! jQuery Browser - v0.1.0 - 3/23/2012
 * https://github.com/jquery/jquery-browser
 * Copyright (c) 2012 John Resig; Licensed MIT */
 
